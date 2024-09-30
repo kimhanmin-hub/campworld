@@ -2,9 +2,11 @@
   "name": "yelpcamp",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+ "scripts": {
+  "install": "npm ci",
+  "build": "npm run build",
+  "start": "node app.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
