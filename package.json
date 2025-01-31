@@ -6,6 +6,7 @@
   "install": "npm ci",
   "build": "npm run build",
   "start": "node app.js"
+  
 },
   "keywords": [],
   "author": "",
