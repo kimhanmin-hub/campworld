@@ -27,8 +27,7 @@ const campgroundsRoutes = require('./routes/campgrounds');
 const reviewsRoutes = require('./routes/reviews');
 const MongoStore = require('connect-mongo');  // 세션 데이터를 MongoDB에 저장하기 위한 패키지
 
-// MongoDB 연결 문자열 (개발 환경에서는 로컬 DB 사용)
-const dburl = 'mongodb://localhost:27017/yelp-camp';
+const dburl = process.env.DB_URL;
 
 // MongoDB에 연결
 mongoose.connect(dburl, {
